@@ -291,11 +291,6 @@ color: #444;
   }
 }
 .bharta{
-  /* display: flex;
-  align-items: center;
-  
-  justify-content: left;
-  gap:1rem; */
   padding: 5% 10%;
 }
 .ribbon{
@@ -329,10 +324,10 @@ color: #444;
   border: 2px solid gray;
   background-color: white;
   box-shadow:0 0 20px 0px lightgray;
-   padding-left:20px;
-    padding-right: 100px;
-   padding-top:40px;
-   height:1500px;
+   /* padding-left:10px; */
+    /* padding-right: 50px; */
+   /* padding-top:40px; */
+   height:100%;
     width:1200px;
    
  }
@@ -340,20 +335,22 @@ color: #444;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:0 10% 0% 15%;
-  line-height: 30px;
+  padding:5% 10% 0% 15%;
+  line-height: 30px; 
+  
+   /* padding-bottom:none; */ 
  }
  .bharta-img img{
   width: 500px;
-  height:500px;
-  margin-bottom:280px;
+  height:600px;
+  margin-bottom:0px;
  }
  
  .Baingan-details{
-  margin-bottom: 300px;
+  margin-bottom: 200px;
   padding:3%;
   width:1200px;
-  border: 1px solid black;
+
   
 
  }
@@ -383,7 +380,6 @@ color: #444;
   background-color: #e55300;
   color: white;
   padding: 1rem 1.5rem;
-  border-radius: 8px;
   max-width: 800px;
 }
 
@@ -401,13 +397,15 @@ color: #444;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  width:500px;
+  height:100px;
 }
 .ingredient-list li {
   
   color: white;
-  padding: 0.4rem;
-  border-radius: 20px;
+  padding: 0;
+
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -424,4 +422,112 @@ color: #444;
   border-radius: 50%;
   font-size: 12px;
   font-weight: bold;
+}
+.measure-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.measure-section h3 {
+  margin-bottom: 10px;
+}
+
+.measure-box {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 400px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.column p {
+  margin: 0;
+  font-size: 16px;
+}
+.container11 h3{
+
+ margin-left: 20px;
+}
+
+.instructions i{
+  line-height: 40px;
+  padding-left: 25px;
+}
+.instructions li{
+  text-decoration: none;
+  list-style:none;
+  text-align: left;
+  display: flex;
+  line-height: 40px;
+  
+}
+/* Responsive fixes */
+@media (max-width: 1200px) {
+  .Baingan-back,
+  .Baingan-details {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .bharta-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Baingan {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .ingredient-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+  }
+
+  .measure-box {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .ribbon {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ingredient-list {
+    grid-template-columns: 1fr;
+  }
+
+  .container11 h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .instructions i {
+    padding-left: 0;
+  }
+
+  .bharta,
+  .meal-details {
+    padding: 5%;
+  }
 }
