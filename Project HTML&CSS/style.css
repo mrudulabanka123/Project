@@ -6,10 +6,11 @@ header{
     background-color: orangered;
     display: flex;
     align-items: center;
-   
    justify-content: space-between;
    padding:12px 20px;
- 
+ position: sticky;
+ top:0;
+ z-index: 1;
 }
 .header-logo{
     display: flex;
