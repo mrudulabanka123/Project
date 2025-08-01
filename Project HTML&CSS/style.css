@@ -8,6 +8,7 @@ header{
     align-items: center;
    justify-content: space-between;
    padding:20px 20px;
+
  position: sticky;
  top:0;
  z-index: 1;
@@ -17,6 +18,10 @@ header{
     color: white;
     justify-content: center;
     align-items: center;
+    padding-left: 150px;
+}
+.menu{
+  padding-right: 150px;
 }
 .header-logo a{
   text-decoration: none;
@@ -88,12 +93,9 @@ header{
 
  }
  .Category{
-   /* border: 1px solid black; */
+   
    width: 100%;
-   /* height:5% 10%;
-  padding-left: 10%;
-  padding-right: 5%;
-  padding-top: 5%; */
+  
   padding: 5% 10%;
  }
  .Category h2{
@@ -111,12 +113,7 @@ header{
    gap: 1rem;
  }
  .items{
-   /* width:200px;
-   height: 110px;
-   border: 2px solid white;
-   background-color: white;
-   box-shadow: 0 0 5px black;
-   position: relative; */
+  
    width: 100%;
   background-color: white;
   box-shadow: 0 0 5px black;
@@ -128,7 +125,7 @@ header{
   width:200px;
   height:120px;
   
-  /* transition:  background-color 0.3s ease 1s; */
+ 
  }
 
  .items:hover img{
@@ -316,7 +313,7 @@ color: #444;
 .meal-title h2{
   width:60px;
  border-bottom: 5px solid orangered;
- /* display: inline-block;  */
+ 
  margin-bottom: 1rem;
  letter-spacing: 3px;
 
@@ -330,9 +327,7 @@ color: #444;
   border: 2px solid gray;
   background-color: white;
   box-shadow:0 0 20px 0px lightgray;
-   /* padding-left:10px; */
-    /* padding-right: 50px; */
-   /* padding-top:40px; */
+   
    height:100%;
     width:1200px;
    
@@ -344,7 +339,7 @@ color: #444;
   padding:5% 10% 0% 15%;
   line-height: 30px; 
   
-   /* padding-bottom:none; */ 
+   
  }
  .bharta-img img{
   width: 500px;
@@ -364,7 +359,7 @@ color: #444;
   color:orangered;
   border-color: orangered;
   border-style: solid;
-  /* border-bottom: 1px; */
+  
  border-top: 1px;
  border-left:1px ;
  border-right:1px ;
